@@ -1,3 +1,3 @@
 # OnionArcCoreTemplate
- Onion Architecture kullanılarak oluşturulmuş bir proje şablonu
+ Onion Architecture kullanılarak oluşturulmuş bir proje şablonu.
  Code First yaklaşımı kullanılmaktadır.
