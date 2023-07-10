@@ -24,13 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="UnitOfWorks\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\OnionArcCoreTemplate.Application\OnionArcCoreTemplate.Application.csproj" />
-    <ProjectReference Include="..\OnionArcCoreTemplate.Domain\OnionArcCoreTemplate.Domain.csproj" />
   </ItemGroup>
 
 </Project>

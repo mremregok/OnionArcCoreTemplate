@@ -21,21 +21,6 @@ namespace OnionArcCoreTemplate.Persistence.Configuration
 			builder.Property(p => p.Image);
 			builder.Property(p => p.Stock).IsRequired();
 			builder.Property(p => p.Rating).HasColumnType("decimal(3,2)");
-
-			builder.HasOne(p => p.Shop)
-				.WithMany(s => s.Products)
-				.HasForeignKey(p => p.ShopId)
-				.OnDelete(DeleteBehavior.SetNull);
-
-			builder.HasOne(p => p.Category)
-				.WithMany(c => c.Products)
-				.HasForeignKey(p => p.CategoryId)
-				.OnDelete(DeleteBehavior.SetNull);
-
-			builder.HasMany(p => p.Reviews)
-				.WithOne(r => r.Product)
-				.HasForeignKey(r => r.ProductId)
-				.OnDelete(DeleteBehavior.Cascade);
 		}
 	}
 }

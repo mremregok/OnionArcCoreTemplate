@@ -15,13 +15,5 @@ namespace OnionArcCoreTemplate.Domain.Entities
 		public string Image { get; set; }
 		public int Stock { get; set; }
 		public decimal Rating { get; set; }
-
-		public int? ShopId { get; set; }
-		public Shop Shop { get; set; }
-
-		public int? CategoryId { get; set; }
-		public Category Category { get; set; }
-
-		public List<Review> Reviews { get; set; }
 	}
 }
